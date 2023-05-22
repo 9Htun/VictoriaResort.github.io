@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="relative w-full sm:hidden">
+        <div>
+            <img src="../images/HeroPic4.jpg" alt="">
+        </div>
+
+        <div class="absolute top-[230px] w-full">
+            <div class="rounded-t-[30px] bg-[#ECF4DD] p-5 w-full">
+                <div class="uppercase flex justify-between text-[#545454]">
+                    <div class="border-b-2 border-[#0DBFCF] w-[155px]">
+                        <p class="pl-5 pb-2">Email</p>
+                    </div>
+                    <div class="border-b-2 border-[#545454] w-[155px] text-right">
+                        <p class="pr-5"><a href="./login2.html">Mobile</a></p>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="text-[#545454] pb-1">Email</p>
+                    <input class="bg-[#D9D9D9] w-full py-2 rounded-[12px]" type="text">
+                </div>
+
+                <div class="pt-4">
+                    <p class="text-[#545454] pb-1">Password</p>
+                    <input class="bg-[#D9D9D9] w-full py-2 rounded-[12px]" type="text">
+                    <p class="text-[#545454] text-right text-[14px]">Forget Password?</p>
+                </div>
+
+                <div class="pt-4">
+                    <button class="w-full bg-[#20312F] py-2 rounded-[12px] text-white">Login</button>
+                </div>
+
+                <div class="flex items-baseline justify-center pt-5">
+                    <div class="border-b-2 border-black w-[143px]"></div>
+                    <div>
+                        <p class="px-2">Or</p>
+                    </div>
+                    <div class="border-b-2 border-black w-[143px]"></div>
+                </div>
+
+                <div class="text-center space-x-2 pt-4">
+                    <ion-icon class="w-[30px] h-[30px] text-red-600" name="logo-google"></ion-icon>
+                    <ion-icon class="w-[30px] h-[30px] text-[#1634D2]" name="logo-facebook"></ion-icon>
+                </div>
+
+                <div class="text-center">
+                    <p class="p-4">Don’t have an account? <span class="text-[#01D8EC]"><a href="./signup.html">Sign up</a></span></p>
+                    <p class="text-[12px]">By signing up, I agree to the <span class="text-[#01D8EC]">Terms of
+                            Service</span><br>
+                        and <span class="text-[#01D8EC]">Privacy Policy</span>, including usage of Cookies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="container w-full mx-auto hidden sm:block">
+        <div class="w-full h-[10vh]">
+            <div class="w-full bg-[rgba(1,216,236,0.46)] flex justify-between items-center pr-9 py-1">
+                <div class="w-[100px]">
+                    <a href="./index.html"><img src="../images/Vlogo.png" alt=""></a>
+                </div>
+                <ul class="flex space-x-10 text-white text-[20px]">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hidden sm:block bg-[url('../images/5.jpg')] bg-cover bg-no-repeat bg-center bg-fixed w-full h-[90vh] container mx-auto">
+        <div class="flex flex-col justify-center items-center h-full">
+            <div class="text-[#0DBFCF] text-[24px] text-center font-semibold pb-10">
+                <p>Welcome Back</p>
+                <p>Login to your account</p>
+            </div>
+    
+            <div>
+                <p class="text-[#0DBFCF] text-[20px]">Email</p>
+                <input class="w-[500px] h-[40px] bg-[rgba(29,117,135,0.39)] rounded-[12px]" type="text">
+            </div>
+    
+            <div class="pt-5">
+                <p class="text-[#0DBFCF] text-[20px]">Password</p>
+                <input class="w-[500px] h-[40px] bg-[rgba(29,117,135,0.39)] rounded-[12px]" type="text">
+            </div>
+    
+            <div class="flex justify-between items-center w-[500px] text-[#1D7587] pt-5">
+                <div class="flex items-center ">
+                    <ion-icon class="w-5 h-5" name="checkbox-outline"></ion-icon>
+                    <p class="text-[18px]">Remember me</p>
+                </div>
+                <p>Forget Password?</p>
+            </div>
+    
+            <div class="pt-7">
+                <button class="w-[327px] h-[40px] bg-[#0EBFCF] text-white rounded-[12px]"><a href="">Login</a></button>
+            </div>
+    
+            <div class="p-7">
+                <p class="text-[20px] text-white">Or</p>
+            </div>
+    
+            <div class="flex items-center">
+                <img class="w-[50px] h-[50px]" src="../images/google.png" alt="">
+                <ion-icon class="w-[35px] h-[35px] text-blue-700" name="logo-facebook"></ion-icon>
+            </div>
+    
+            <div class="p-5">
+                <p class="text-[24px] text-white">Don’t have an account? <span class="text-[#01D8EC]"><a href="./signup.html">Sign up</a></span></p>
+            </div>
+    
+            <div class="text-[18px] w-[390px] text-center">
+                <p class="text-white">By signing up, I agree to the <span class="text-[#01D8EC]">Terms of Service</span>
+                    and <span class="text-[#01D8EC]">Privacy Policy</span>, including usage of Cookies</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

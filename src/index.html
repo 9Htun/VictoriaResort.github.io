@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Resort</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sticky top-0 z-10 sm:hidden">
+        <div class="container w-full h-[373px] mx-auto relative">
+            <img src="../images/1.jpg" alt="" class="absolute">
+            <div
+                class="w-full h-[228px] bg-[#3F6059] absolute bottom-0 rounded-t-[30px] p-6 border-[#01D8EC] border-l-2 border-t-2 border-r-2">
+                <div class="flex justify-between">
+                    <div class="relative w-[180px] rounded-[12px] overflow-hidden">
+                        <ion-icon name="person-outline" class="absolute top-[10px] left-2 text-[#01D8EC]"></ion-icon>
+                        <input type="text" placeholder="Person"
+                            class="pl-8 py-[6px] border-none rounded-[12px] bg-[rgba(65,48,48,0.27)] outline-none">
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2 w-[112px] py-[6px] bg-[rgba(65,48,48,0.27)] rounded-[12px]">
+                        <p class="text-[rgba(255,255,255,0.53)]">Room</p>
+                        <ion-icon name="caret-down-outline" class="text-[#01D8EC]"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-5">
+                    <div class="relative w-[180px] rounded-[12px] overflow-hidden">
+                        <ion-icon name="calendar-outline" class="absolute top-[10px] left-2 text-[#01D8EC]"></ion-icon>
+                        <input type="text" placeholder="Date"
+                            class="pl-8 py-[6px] border-none rounded-[12px] bg-[rgba(65,48,48,0.27)] outline-none">
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-2 w-[112px] py-[6px] bg-[rgba(65,48,48,0.27)] rounded-[12px]">
+                        <p class="text-[rgba(255,255,255,0.53)]">Nights</p>
+                        <ion-icon name="moon-outline" class="text-[#01D8EC]"></ion-icon>
+                    </div>
+                </div>
+
+                <a href="./mobileActivity.html"><button
+                        class="w-full bg-[#01D8EC] rounded-[12px] py-[6px] mt-3 text-white">Activity</button></a>
+
+                <a href="./login.html">
+                    <button class="w-full bg-[#01D8EC] rounded-[12px] py-[6px] mt-3 text-white">Log In</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full container mx-auto bg-[rgba(63,96,89,0.77)] px-6 pt-3 pb-5 sm:hidden">
+        <p class="text-white">Room Types</p>
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-3">
+            <div><img class="w-full h-[170px]" src="../images/2.jpg" alt=""></div>
+            <div class="flex justify-between p-3">
+                <div class="flex items-center gap-1 font-semibold">
+                    <p class="text-[#1D7587]">Side villa</p>
+                    <div class="flex items-center text-[#F0E932]">
+                        <ion-icon name="star-outline" class=""></ion-icon>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="text-[#1D7587] font-semibold">$120 per night</div>
+            </div>
+        </div>
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-5">
+            <div><img class="w-full h-[170px]" src="../images/3.jpg" alt=""></div>
+            <div class="flex justify-between p-3">
+                <div class="flex items-center gap-1 font-semibold">
+                    <p class="text-[#1D7587]">Forest tent</p>
+                    <div class="flex items-center text-[#F0E932]">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="text-[#1D7587] font-semibold">$120 per night</div>
+            </div>
+        </div>
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-5">
+            <div><img class="w-full h-[170px]" src="../images/ocean view.jpg" alt=""></div>
+            <div class="flex justify-between p-3">
+                <div class="flex items-center gap-1 font-semibold">
+                    <p class="text-[#1D7587]">Ocean view villa</p>
+                    <div class="flex items-center text-[#F0E932]">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <div class="text-[#1D7587] font-semibold">$250 per night</div>
+            </div>
+        </div>
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-5">
+            <div><img class="w-full h-[170px]" src="../images/innerview.jpg" alt=""></div>
+            <div class="flex justify-between p-3">
+                <div class="flex items-center gap-1 font-semibold">
+                    <p class="text-[#1D7587]">Superior Villa</p>
+                    <div class="flex items-center text-[#F0E932]">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="text-[#1D7587] font-semibold">$300 per night</div>
+            </div>
+        </div>
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-5">
+            <div><img class="w-full h-[170px]" src="../images/innerview2.jpg" alt=""></div>
+            <div class="p-3">
+                <div class="text-center">
+                    <p class="text-[#1D7587] font-bold">Interior Design</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full bg-[#D9D9D9] rounded-[12px] overflow-hidden mt-5">
+            <div><img class="w-full h-[170px]" src="../images/dinner.jpg" alt=""></div>
+            <div class="p-3">
+                <div class="text-center">
+                    <p class="text-[#1D7587] font-bold">Ocean View Restaurant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="hidden sm:block container w-full mx-auto sticky top-0 z-10">
+            <div class="w-full bg-[#1D7587] flex justify-between items-center pr-9 py-2">
+                <div class="w-[100px]">
+                    <a href="./index.html"><img src="../images/Vlogo.png" alt=""></a>
+                </div>
+                <ul class="flex space-x-10 text-white text-[20px]">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="./login.html">
+                            <button
+                                class="bg-white text-[#1D7587] font-semibold px-6 py-1 rounded-[12px] shadow-sm shadow-black">Login</button>
+                        </a>
+                    </li>
+                    <li><a href="./signup.html">
+                            <button
+                                class="bg-white text-[#1D7587] font-semibold px-4 py-1 rounded-[12px] shadow-sm shadow-black">Sign
+                                Up</button>
+                        </a></li>
+                </ul>
+            </div>
+        
+    </nav>
+
+    <section class="hidden sm:block container w-full mx-auto">
+        <div class="relative">
+            <img class="w-full" src="../images/madam.jpg" alt="">
+            <div class="absolute bottom-[150px] left-[28%]">
+                <p
+                    class="text-[96px] font-AguafinaScript text-[rgba(29,117,135,0.78)] drop-shadow-[0px_4px_5px_rgba(29,117,135,0.53)]">
+                    Let’s Start the Adventure</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden sm:block container w-full mx-auto">
+        <div class="text-center py-10">
+            <p class="text-[48px] font-AlexBrush text-[#01D8EC] drop-shadow-[0px_4px_5px_rgba(29,117,135,0.53)]">Things
+                to Explore</p>
+        </div>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper px-10">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/snorkeling.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Snorkeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/kyaking.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Kayaking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/suba.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Scuba Diving</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/trekking.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Hiking</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/snorkeling.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Snorkeling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/kyaking.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Kayaking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/suba.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Scuba Diving</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/trekking.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Hiking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden sm:block w-full container mx-auto">
+        <div class="py-20 px-10">
+            <img class="w-full" src="../images/helicopter2.jpg" alt="">
+        </div>
+        <div class="px-10 pb-10">
+            <img class="w-full" src="../images/hightview.jpg" alt="">
+        </div>
+        <div class="text-center pb-10">
+            <a href="./BookingDetail.html"><button class="bg-[#01D8EC] text-white px-5 py-3 rounded-[9px]">Book Now</button></a>
+        </div>
+    </section>
+
+    <section class="hidden sm:block w-full container mx-auto">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper px-10">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img class="h-[265px] w-full" src="../images/2.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Side Villa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/3.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Forest Tent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/ocean view.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Ocean View Villa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/villa.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Superior Villa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img class="h-[265px] w-full" src="../images/2.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Side Villa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/3.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Forest Tent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/ocean view.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Ocean View Villa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex justify-center text-center">
+                        <div class="w-[400px] bg-slate-400 rounded-[10px] overflow-hidden">
+                            <img src="../images/villa.jpg" alt="">
+                            <p class="py-3 text-[25px] font-semibold italic text-white">Superior Villa</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden sm:block w-full container mx-auto">
+        <div class="text-center pt-20 pb-10">
+            <p class="text-[48px] font-AlexBrush text-[#01D8EC] drop-shadow-[0px_4px_5px_rgba(29,117,135,0.53)]">Other
+                Available services</p>
+        </div>
+
+        <div class="flex justify-evenly py-10">
+            <div class="flex flex-col items-center w-[200px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="leaf-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Spa</p>
+            </div>
+
+            <div class="flex flex-col items-center w-[200px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="beer-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Bar & Lounges</p>
+            </div>
+
+            <div class="flex flex-col items-center w-[250px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="server-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Bussiness Services</p>
+            </div>
+
+            <div class="flex flex-col items-center w-[200px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="storefront-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Gift Shop</p>
+            </div>
+
+            <div class="flex flex-col items-center w-[200px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="people-circle-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Family Friendly</p>
+            </div>
+
+            <div class="flex flex-col items-center w-[200px]">
+                <ion-icon class="w-20 h-20 text-[#01D8EC]" name="water-outline"></ion-icon>
+                <p class="text-[#78BDF0] text-[36px] font-Aladin">Pool</p>
+            </div>
+
+        </div>
+
+        <div class="px-10 pt-20 pb-10">
+            <img class="w-full" src="../images/HeroPic4.jpg" alt="">
+        </div>
+    </section>
+
+    <footer class="hidden sm:block w-full container mx-auto bg-[#1D7587] p-5">
+        <div class="bg-[rgba(255,255,255,0.24)] flex justify-evenly py-8">
+            <div>
+                <p class="text-[#1D7587] text-[20px] font-Aladin uppercase">Victoria Resorts</p>
+                <div class="flex space-x-3 py-2">
+                    <ion-icon class="w-7 h-7 text-white" name="logo-facebook"></ion-icon>
+                    <ion-icon class="w-7 h-7 text-white" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-7 h-7 text-white" name="logo-instagram"></ion-icon>
+                    <ion-icon class="w-7 h-7 text-white" name="logo-youtube"></ion-icon>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-[#78BDF0]">Support</p>
+                <div class="text-white pt-3">
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>Downloads</p>
+                    <p>Locations</p>
+                    <p>Services Center</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-[#78BDF0]">Quck Links</p>
+                <div class="text-white pt-3">
+                    <p>Home</p>
+                    <p>Start Booking</p>
+                    <p>Top Destination</p>
+                    <p>About Us</p>
+                    <p>Advertising Info</p>
+                    <p>Private Jet</p>
+                    <p>Luxury Cruises</p>
+                    <p>Blog</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-[#78BDF0] uppercase">Call Us Today</p>
+                <div class="text-white pt-3 font-Aladin">
+                    <p>+95 5465128</p>
+                    <p>+95 795212360</p>
+                    <p class="pt-5">Call us today to book luxury vacations & <br>to explore the nature</p>
+                </div>
+            </div>
+
+            <div class="w-[250px]">
+                <div class="flex justify-start space-x-4">
+                    <ion-icon class="text-white w-12 h-12" name="mail-outline"></ion-icon>
+                    <p class="text-[#78BDF0]">Stay up to date on the latest from Victoria Resort</p>
+                </div>
+
+                <div>
+                    <input
+                        class="text-[rgba(255,255,255,0.37)] pb-1 pt-5 w-full bg-transparent border-b-2 border-[rgba(255,255,255,0.37)]"
+                        type="text" placeholder="Enter Your E-mail address">
+                </div>
+
+                <div class="pt-3">
+                    <a href="./signup.html"><button class="bg-[#01D8EC] text-white px-7 py-2 rounded-[9px]">Sign
+                            Up</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-[rgba(255,255,255,0.37)] bg-[rgba(255,255,255,0.24)] pb-3">
+            <p>2023 @copyright by Victoria Group</p>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
